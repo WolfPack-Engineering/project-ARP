@@ -16,11 +16,23 @@ public:
 
 private:
 
-	void image_callback(const sensor_msgs::msg::Image::SharedPtr msg) const {}
+	void image_callback(const sensor_msgs::msg::Image::SharedPtr msg) const 
+	{
+		//TODO
+	}
 
 	void topic_callback(const sensor_msgs::msg::CameraInfo::SharedPtr msg) const {}	
 
 	rclcpp::Subscription<sensor_msgs::msg::CameraInfo>::SharedPtr camera_info_sub_;
 	rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr camera_image_sub_;
-	// rclcpp::Publisher<>::SharedPtr cones_location;
+	rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr processed_image;
+};
+
+int main(int argc, char **argv)
+{
+	rclcpp::init(argc, argv);
+	auto node = std::make_shared<Camera>();
+	rclcpp::spin(node);
+	rclcpp::shutdown();
+	return 0;
 }
