@@ -41,7 +41,7 @@ ament_target_dependencies(Encoder rclcpp sensor_msgs)
 ament_target_dependencies(DriveTrain rclcpp airsim_interfaces geometry_msgs)
 ament_target_dependencies(PathPlanner rclcpp geometry_msgs nav_msgs)
 ament_target_dependencies(StateEstimator rclcpp sensor_msgs nav_msgs)
-ament_target_dependencies(Camera rclcpp sensor_msgs cv_bridge OpenCV)
+ament_target_dependencies(Camera rclcpp sensor_msgs cv_bridge OpenCV geometry_msgs)
 
 install(TARGETS
   IMU

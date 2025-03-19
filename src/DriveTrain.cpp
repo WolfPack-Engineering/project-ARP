@@ -25,9 +25,13 @@ private:
     {
         auto msg = airsim_interfaces::msg::CarControls();
         msg.manual = true;
+        msg.gear_immediate = true;
         msg.manual_gear = 1;
         msg.throttle = cmd.linear.x;
         msg.steering = cmd.angular.z;
+        if (cmd.linear.x == 0.0) {
+            msg.brake = true;
+        }
         publisher_->publish(msg);
         RCLCPP_INFO(this->get_logger(), "Published CarControls message: throttle: '%f', steering: '%f'", msg.throttle, msg.steering);
     }
