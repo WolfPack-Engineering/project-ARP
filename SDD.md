@@ -21,6 +21,7 @@ This document defines the system level architecture for the Autonomous Racing Pr
 ## Interfaces
 
 ## Hardware Architecture
+Rear-wheel drive
 
 ## Electronics Architecture
 
@@ -60,6 +61,7 @@ Discussed System Design Document
 Action Items
 - [ ] Prelimanary thermodynamic analysis @JosephPennock
 - [ ] Prelimanary Object tracking design @NathanNeidigh
+- [ ] Investigate turn-radius, wheel size, and wheels @SethWaller
 
 
 **March 31, 2026**
