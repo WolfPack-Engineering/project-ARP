@@ -55,13 +55,21 @@ Final System Test Lap function
 ### Phase 5: Final Write-Up and Catch-Up on Sleep
 
 ## Meeting Notes
+**April 28, 2026**
+Discussed use of Lidar sensor. Decision is no.
+
+Action Items
+- [ ] Talk to Gobilda (or others) for funding @JosephPennock
+- [ ] Prelimanary SLAM design @NathanNeidigh
+- [ ] Pricing Traxxis mod system #SethWaller
+
 **April 14, 2026**
 Discussed System Design Document
 
 Action Items
-- [ ] Prelimanary thermodynamic analysis @JosephPennock
-- [ ] Prelimanary Object tracking design @NathanNeidigh
-- [ ] Investigate turn-radius, wheel size, and wheels @SethWaller
+- [x] Prelimanary thermodynamic analysis @JosephPennock
+- [x] Prelimanary Object tracking design @NathanNeidigh
+- [x] Investigate cheap modification of existing designs @SethWaller
 
 
 **March 31, 2026**
@@ -69,5 +77,5 @@ Delegation of initial tasks and institution of the late work slap penalty.
 
 Action Items
 - [X] Prelimanary computer vision design @NathanNeidigh
-- [ ] Hardware inventory @SethWaller
+- [x] Hardware inventory @SethWaller
 - [X] Prelimanary power delivery system design @JosephPennock
